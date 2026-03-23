@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Page</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            margin: 0;
+        }
+
+        .container {
+            width: 75%;
+            margin: 40px auto;
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        }
+
+        .header {
+            text-align: center;
+            padding: 15px;
+            background: #2a5298;
+            color: white;
+            border-radius: 10px;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            padding: 20px;
+            background: #f5f7fa;
+            border-radius: 10px;
+        }
+
+        .image {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            margin-right: 20px;
+            object-fit: cover;
+            border: 3px solid #2a5298;
+        }
+
+        .profile p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+            color: #2a5298;
+        }
+
+        .education {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            gap: 15px;
+        }
+
+        .box {
+            width: 30%;
+            background: #f0f4ff;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            transition: 0.3s;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        }
+
+        .box:hover {
+            transform: translateY(-10px);
+            background: #e0e7ff;
+        }
+
+        .box img {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .box p {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .box a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <div class="header">
+        <h1>PAWAN KUMAR R</h1>
+    </div>
+
+    <!-- Profile -->
+    <div class="profile">
+        <img src="yourphoto.jpg" class="image" alt="Profile">
+        <p>
+            Hello! I am <b>Pawan Kumar R</b>, a passionate and motivated student currently studying at 
+            City Engineering College. I am interested in web development and love learning new technologies 
+            to improve my skills and build a strong career.
+        </p>
+    </div>
+
+    <!-- Education -->
+    <h2>Education</h2>
+
+    <div class="education">
+
+        <!-- College -->
+        <div class="box">
+            <a href="https://cityengineeringcollege.ac.in" target="_blank">
+                <img src="college.jpg" alt="College">
+                <p>City Engineering College</p>
+            </a>
+        </div>
+
+        <!-- Diploma -->
+        <div class="box">
+            <a href="https://apspolytechnic.com/" target="_blank">
+                <img src="https://after10thwhat.com/wp-content/uploads/2018/03/aps02.jpg" alt="Diploma">
+                <p>DIPLOMA</p>
+            </a>
+        </div>
+
+        <!-- School -->
+        <div class="box">
+            <a href="https://gvehs.com/school-information/" target="_blank">
+                <img src="school.jpg" alt="School">
+                <p>GREEN VALLEY ENGLISH SCHOOL</p>
+            </a>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
